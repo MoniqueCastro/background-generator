@@ -1,14 +1,15 @@
-#random {
+#button {
 	background-color: white;
 	padding: 10px 24px;
 	font: 'Raleway', sans-serif;
+	font-weight: bold;
 	color: rgba(0, 0, 0,.6);
 	text-align: center;
 	text-transform: uppercase;
 	border:none;
 }
 
-#random:hover {
+#button:hover {
 	cursor: pointer;
 }
 
@@ -29,6 +30,7 @@ h1 {
 	text-transform: uppercase;
 	letter-spacing: .5em;
 	width: 100%;
+	padding-top: 20vh;;
 }
 
 input:hover {
@@ -41,4 +43,5 @@ h3 {
 	text-align: center;
 	text-transform: none;
 	letter-spacing: 0.01em;
+	padding-bottom: 5vh;
 }

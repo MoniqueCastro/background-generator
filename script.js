@@ -1,8 +1,8 @@
 var css = document.querySelector("h3");
-var color1 = document.querySelector(".color1");
-var color2 = document.querySelector(".color2");
+var color1 = document.querySelector(".first");
+var color2 = document.querySelector(".second");
 var body = document.getElementById("gradient");
-var button = document.getElementById("random");
+var button = document.getElementById("button");
 
 function displayCSS() {
 	css.textContent = body.style.background + ";";
@@ -10,12 +10,15 @@ function displayCSS() {
 
 function setGradient() {
 	body.style.background = "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
-
 	displayCSS();
 }
 
 function setRandomGradient() {
-	body.style.background = "linear-gradient(to right, " + "rgb(" + Math.floor(Math.random() * 256) + ", " + Math.floor(Math.random() * 256) + ", " + Math.floor(Math.random() * 256) + ")"+ ", " + "rgb(" + Math.floor(Math.random() * 256) + ", " + Math.floor(Math.random() * 256) + ", " + Math.floor(Math.random() * 256) + ")" + ")";
+	var firstRandomColor = "rgb(" + Math.floor(Math.random() * 256) + ", " + Math.floor(Math.random() * 256) + ", " + Math.floor(Math.random() * 256) + ")";
+	var secondRandomColor = "rgb(" + Math.floor(Math.random() * 256) + ", " + Math.floor(Math.random() * 256) + ", " + Math.floor(Math.random() * 256) + ")";
+	body.style.background = "linear-gradient(to right, " 
+	+ firstRandomColor + ", " 
+	+ secondRandomColor + ")";
 
 	displayCSS();
 }
