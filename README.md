@@ -1,4 +1,4 @@
 # background-generator
-A linear-gradient background generator.
+A linear-gradient background generator that allows you to create different color effects for the background of your project.
 
-Click on the "random colors" button to get a new combination and copy the code on top of the button to use on your own projects.
+Click on the "random colors" button to get a new combination and copy the code on top of the button.
